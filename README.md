@@ -11,7 +11,7 @@ Despite its name, CountUp can count in either direction, depending on the `start
 - **[CountUp.js repo](https://github.com/inorganik/countUp.js)**
 - **[CountUp.js Angular ^2 Module](https://github.com/inorganik/countUp.js-angular2)**
 - **[CountUp.js React](https://github.com/glennreyes/react-countup)**
-- **[CountUp.js WordPress Plugin]((https://wordpress.org/plugins/countup-js/)**
+- **[CountUp.js WordPress Plugin](https://wordpress.org/plugins/countup-js/)**
 
 ## Usage
 
