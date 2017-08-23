@@ -1,16 +1,17 @@
 # CountUp.js Angular 1.x Module
-Attribute directive used to quickly create animations that display numerical data in a more interesting way.
 
-Despite its name, CountUp can count in either direction, depending on the `startVal` and `endVal` params that you pass.
+Animates a numerical value by counting to it.
 
-CountUp.js supports all browsers.
+Despite its name, CountUp can count in either direction, depending on the `start-val` and `end-val` attributes that you pass.
 
 ### [Demo (CountUp + angular-scroll-spy)](http://inorganik.github.io/angular-scroll-spy/)
 
 ## See Also
 
-- [CountUp.js repo](https://github.com/inorganik/countUp.js)
-- [CountUp.js for Angular 2](https://github.com/inorganik/countUp.js-angular2)
+- **[CountUp.js repo](https://github.com/inorganik/countUp.js)**
+- **[CountUp.js Angular ^2 Module](https://github.com/inorganik/countUp.js-angular2)**
+- **[CountUp.js React](https://github.com/glennreyes/react-countup)**
+- **[CountUp.js WordPress Plugin]((https://wordpress.org/plugins/countup-js/)**
 
 ## Usage
 

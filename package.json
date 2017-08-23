@@ -1,6 +1,6 @@
 {
-	"name": "countup.js-angular-1",
-	"description": "Animates a numerical value by counting to it",
+	"name": "countup.js-angular1",
+	"description": "Animates a numerical value by counting to it, for Angular 1.x",
 	"version": "1.0.0",
 	"license": "MIT",
 	"main": "./dist/angular-countUp.min.js",

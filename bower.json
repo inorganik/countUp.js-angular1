@@ -1,16 +1,16 @@
 {
-    "name": "countUp.js-angular1",
-    "main": ["dist/angular-countUp.js"],
-    "author": "Jamie Perkins",
-    "dependencies": {
-        "countUp.js": "^1.8.5"
-    },
-    "ignore": [
-        "LICENSE.md",
-        "README.md",
-        "contributing.md",
-        "gulpfile.js",
-        "component.json",
-        "index.html"
-    ]
+	"name": "countUp.js-angular1",
+	"main": ["dist/angular-countUp.js"],
+	"author": "Jamie Perkins",
+	"dependencies": {
+		"countUp.js": "^1.8.5"
+	},
+	"ignore": [
+		"LICENSE.md",
+		"README.md",
+		"contributing.md",
+		"gulpfile.js",
+		"component.json",
+		"index.html"
+	]
 }
