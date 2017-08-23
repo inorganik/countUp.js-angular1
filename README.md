@@ -6,6 +6,9 @@ Despite its name, CountUp can count in either direction, depending on the `start
 
 ### [Demo (CountUp + angular-scroll-spy)](http://inorganik.github.io/angular-scroll-spy/)
 
+npm package: `countup.js-angular1`
+bower package: `countUp.js-angular1`
+
 ## See Also
 
 - **[CountUp.js repo](https://github.com/inorganik/countUp.js)**
