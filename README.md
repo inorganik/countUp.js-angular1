@@ -5,12 +5,12 @@ Despite its name, CountUp can count in either direction, depending on the `start
 
 CountUp.js supports all browsers.
 
-### [Angular demo (with scroll-spy)](http://inorganik.github.io/angular-scroll-spy/)** and see usage examples below.
+### [Demo (CountUp + angular-scroll-spy)](http://inorganik.github.io/angular-scroll-spy/)
 
 ## See Also
 
 - [CountUp.js repo](https://github.com/inorganik/countUp.js)
-- [CountUp.js for Angular 2](https://github.com/inorganik/countUp.js)
+- [CountUp.js for Angular 2](https://github.com/inorganik/countUp.js-angular2)
 
 ## Usage
 
