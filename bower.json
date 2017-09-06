@@ -1,6 +1,6 @@
 {
 	"name": "countUp.js-angular1",
-	"main": ["dist/angular-countUp.js"],
+	"main": ["dist/angular-countUp.min.js"],
 	"author": "Jamie Perkins",
 	"dependencies": {
 		"countUp.js": "^1.8.5"
