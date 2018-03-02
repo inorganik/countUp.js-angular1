@@ -42,15 +42,9 @@
             },
             link: function ($scope, $el, $attrs) {
 
-                var options = {};
-
                 if ($scope.filter) {
                     var filterFunction = createFilterFunction();
-                    options.formattingFn = filterFunction;
-                }
-
-                if ($scope.options) {
-                    angular.extend(options, $scope.options);
+                    $scope.options.formattingFn = filterFunction;
                 }
 
                 var countUp = createCountUp($scope.startVal, $scope.endVal, $scope.decimals, $scope.duration);
@@ -67,7 +61,7 @@
                     };
                 }
 
-                function createCountUp(sta, end, dec, dur) {
+                function createCountUp(sta, end, dec, dur, options) {
                     sta = sta || 0;
                     if (isNaN(sta)) sta = Number(sta.match(/[\d\-\.]+/g).join('')); // strip non-numerical characters
                     end = end || 0;
@@ -126,10 +120,20 @@
                     if (countUp !== null) {
                         countUp.update($scope.endVal);
                     } else {
-                        countUp = createCountUp($scope.startVal, $scope.endVal, $scope.decimals, $scope.duration);
+                        countUp = createCountUp($scope.startVal, $scope.endVal, $scope.decimals, $scope.duration, $scope.options);
                         animate();
                     }
                 });
+
+                $scope.$watch('options', function (newValue, oldValue) {
+
+                    if (newValue === null || newValue === oldValue)
+                        return;
+
+                    // Create new instance every time.
+                    countUp = createCountUp($scope.startVal, $scope.endVal, $scope.decimals, $scope.duration, $scope.options);
+                    animate();
+                }, true); // true for deep watch because options is an object.
             }
         };
     }]);
