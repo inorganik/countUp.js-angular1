@@ -7,7 +7,7 @@
     // * **Author:** Jamie Perkins
     //
     // Creates a counting animation for numbers
-    // REQUIRED attributes: 
+    // REQUIRED attributes:
     // - endVal
     //
     // DEPENDENCY: countUp.js
@@ -18,7 +18,7 @@
 
     /**
      * count-up attribute directive
-     * 
+     *
      * @param {number} startVal - (optional) The value you want to begin at, default 0
      * @param {number} countUp - The value you want to arrive at
      * @param {number} duration - (optional) Duration in seconds, default 2.
@@ -75,7 +75,7 @@
                     dur = Number(dur) || 2;
                     dec = Number(dec) || 0;
 
-                    // construct countUp 
+                    // construct countUp
                     var countUp = new CountUp($el[0], sta, end, dec, dur, options);
                     if (end > 999) {
                         // make easing smoother for large numbers
@@ -118,17 +118,25 @@
                     });
                 }
 
-                $scope.$watch('endVal', function (newValue, oldValue) {
+                function onWatch(newValue, oldValue, forceReload){
                     if (newValue === null || newValue === oldValue) {
                         return;
                     }
 
-                    if (countUp !== null) {
+                    if (countUp !== null && !forceReload) {
                         countUp.update($scope.endVal);
                     } else {
                         countUp = createCountUp($scope.startVal, $scope.endVal, $scope.decimals, $scope.duration);
                         animate();
                     }
+                }
+
+                $scope.$watch('decimals', function(newValue, oldValue) {
+                    onWatch(newValue, oldValue, true);
+                });
+
+                $scope.$watch('endVal', function (newValue, oldValue) {
+                    onWatch(newValue, oldValue, false);
                 });
             }
         };
